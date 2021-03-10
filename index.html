@@ -5,38 +5,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tip Calculator</title>
-    <!-- <link href="normalize.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"
-    /> -->
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vfw3tos.css">
   </head>
 
   <body>
-    <div class="card">
+    <div class="calWrapper">
       
-      <header>
-        <h1>Tip Calculator</h1>
-      </header>
+    <header>
+      <h1>Tip Calculator</h1>
+    </header>
       
-      <form>
-        <label for="billAmount">Bill Amount</label>
-        <input type="text" id="billAmount" />
-        <button id="btn15">15%</button>
-        <button id="btn175">17.5%</button>
-        <button id="btn20">20%</button>
-        <input type="text" placeholder="Custom Tip Amount %" id="customTip" />
-        <button id="btncalculate">Calculate</button>
-      </form>
+    <form>
+
+      <label for="billAmount">Bill Amount</label>
+      <span class="sr-only">How much is your total?</span>
+      <input type="text" id="billAmount" placeholder="$ 0.00"/>
+          
+
+      <label for="tipPer">Tip Percentage</label>
+      <select id="tipPer" name="tipPer">
+          <option value=".15" id="btn15">15%</option>
+          <option value=".175" id="btn175">17.5%</option>
+          <option value=".20" id="btn20">20%</option>
+      </select>
+
+
+
+      <label for="customTip">Custom Tip Percentage Amount</label>
+      <input type="text" placeholder="30%" id="customTip" />
+
+
+      <button type="submit" id="btnCalculate">Calculate</button>
+  </form>
       
-      <h4>Result</h4>
+    <h4>Result</h4>
       <p>Tip amount: <output id="tipAmount"></output><br /></p>
       <p>Total:<output id="total"></output></p>
       
-      <footer>
-        <p>Copyright 2021 | Framework Television</p>
-      </footer>
+    <footer>
+      <p>Copyright 2021</p>
+    </footer>
 
     </div>
     <script src="main.js"></script>
