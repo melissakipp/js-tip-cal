@@ -16,36 +16,48 @@
       <h1>Tip Calculator</h1>
     </header>
       
-    <form>
-
-      <label for="billAmount">Bill Amount</label>
-      <span class="sr-only">How much is your total?</span>
+  <form>
+    <fieldset>
+      <legend>How much is your total?</legend >
+      <label for="billAmount">Bill Amount: </label>
       <input type="text" id="billAmount" placeholder="$ 0.00"/>
+    </fieldset>
           
+    <fieldset>
+      <legend for="tipPer">Tip Percentage</legend >
+        
+        <label for="btn15">
+        <input type="radio" name="btn" value=".15" id="btn15">
+        15%</label>
 
-      <label for="tipPer">Tip Percentage</label>
-      <select id="tipPer" name="tipPer">
-          <option value=".15" id="btn15">15%</option>
-          <option value=".175" id="btn175">17.5%</option>
-          <option value=".20" id="btn20">20%</option>
-      </select>
+        <input type="radio" name="btn" value=".175" id="btn175">
+        <label for="btn175">17.5%</label>
 
+        <input type="radio" name="btn" value=".20" id="btn20">
+        <label for="btn20">20%</label>
+    </fieldset>
 
+    <fieldset>
+      <legend>Custom Tip</legend>
+      <label for="customTip">Provide tip percentage:</label>
+      <input type="text" id="customTip" />
+    </fieldset>
 
-      <label for="customTip">Custom Tip Percentage Amount</label>
-      <input type="text" placeholder="30%" id="customTip" />
-
-
-      <button type="submit" id="btnCalculate">Calculate</button>
   </form>
-      
-    <h4>Result</h4>
+
+  <div class="btn-container">
+    <button type="submit" id="btnCalculate">Calculate</button>
+  </div>
+
+  <div class="container">
+    <h2>Results</h2>
       <p>Tip amount: <output id="tipAmount"></output><br /></p>
-      <p>Total:<output id="total"></output></p>
-      
-    <footer>
-      <p>Copyright 2021</p>
-    </footer>
+      <p>Total: <output id="total"></output></p>
+  </div>
+
+  <footer>
+    <p>Copyright 2021</p>
+  </footer>
 
     </div>
     <script src="main.js"></script>
