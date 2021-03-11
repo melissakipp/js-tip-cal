@@ -1,7 +1,7 @@
 document.getElementById("btn15").addEventListener("click", calc);
 document.getElementById("btn175").addEventListener("click", calc);
 document.getElementById("btn20").addEventListener("click", calc);
-document.getElementById("btncalculate").addEventListener("click", calc);
+document.getElementById("btnCalculate").addEventListener("click", calc);
 
 function calc(event) {
   let tipPercentage = 0;
@@ -17,7 +17,7 @@ function calc(event) {
     case "btn20":
       tipPercentage = 0.2;
       break;
-    case "btncalculate":
+    case "btnCalculate":
       tipPercentage = document.getElementById("customTip").value / 100;
   }
 
