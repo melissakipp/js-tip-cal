@@ -16,21 +16,21 @@
       <h1>Tip<br>Calculator</h1>
     </header>
       
-  <form>
+  <form action="javascript:void(calc())">
     <fieldset>
       <legend>How much is your total?</legend >
-      <label for="billAmount">Bill Amount: </label>
-      <input type="text" id="billAmount" placeholder="$ 0.00"/>
+      <label for="billAmount">Bill Amount: $</label>
+      <input type="text" id="billAmount" placeholder="0.00"/>
     </fieldset>
           
     <fieldset class="stack">
       <legend for="tipPer">Tip Percentage</legend >
         
-        <label for="btn15"><input type="radio" name="btn" value=".15" id="btn15">&nbsp;&nbsp;&nbsp;15%</label>
+        <label for="btn15" tabindex="0"><input type="radio" name="btn" value=".15" id="btn15">&nbsp;&nbsp;&nbsp;15%</label>
         
-        <label for="btn175"><input type="radio" name="btn" value=".175" id="btn175">&nbsp;&nbsp;&nbsp;17.5%</label>
+        <label for="btn175" tabindex="0"><input type="radio" name="btn" value=".175" id="btn175">&nbsp;&nbsp;&nbsp;17.5%</label>
 
-        <label for="btn20"><input type="radio" name="btn" value=".20" id="btn20">&nbsp;&nbsp;&nbsp;20%</label>
+        <label for="btn20" tabindex="0"><input type="radio" name="btn" value=".20" id="btn20">&nbsp;&nbsp;&nbsp;20%</label>
     </fieldset>
 
     <fieldset>
