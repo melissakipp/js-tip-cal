@@ -432,6 +432,21 @@ fieldset {
   margin-bottom: .75em;
 }
 
+legend {
+  margin-bottom: .75em;
+}
+
+.stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input[text=radio] {
+  padding: 1em;
+}
+
 .btn-container {
   margin-top: 1em;
   display: flex;
@@ -448,26 +463,19 @@ button {
   padding: .5em .75em;
   outline: none;
   align-self: center;
+  letter-spacing: .04em;
 }
 
 button:hover {
   background-color: hsla(207, 62%, 15%, 1);
 }
 
-input[type=text], select {
+input[type=text] {
   border: 2px solid #555;
-  padding: .75em;
+  padding: .55em;
   border-radius: 2em;
   cursor: pointer;
   outline: none;
-}
-
-input[type=radio] {
-  margin-left: .5em;
-}
-
-label {
-  font-size: 1.25em;
 }
 
 input[type=text]:focus,
