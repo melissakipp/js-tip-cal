@@ -366,6 +366,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1em 0;
  }
 
  h1 {
@@ -379,7 +380,7 @@ body {
   flex-direction: column;
   background-color: #F2F2F2;
   width: 85vw;
-  max-width: 400px;
+  max-width: 800px;
   height: 80%;
   border-radius: 1em;
   padding: 1em;
