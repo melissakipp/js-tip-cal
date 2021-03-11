@@ -347,33 +347,12 @@
   [hidden] {
     display: none;
   }
-/* Color Palette
-/* Color Theme Swatches in Hex 
-.js-tip-cal_project-1-hex { color: #2E84C9; }
-.js-tip-cal_project-2-hex { color: #205A8A; }
-.js-tip-cal_project-3-hex { color: #0E273C; }
 
-/* Color Theme Swatches in RGBA 
-.js-tip-cal_project-1-rgba { color: rgba(46, 132, 201, 1); }
-.js-tip-cal_project-2-rgba { color: rgba(32, 90, 138, 1); }
-.js-tip-cal_project-3-rgba { color: rgba(14, 39, 60, 1); }
-
-
-/* Color Theme Swatches in HSLA 
-.js-tip-cal_project-1-hsla { color: hsla(206, 62, 48, 1); }
-.js-tip-cal_project-2-hsla { color: hsla(207, 62, 33, 1); }
-.js-tip-cal_project-3-hsla { color: hsla(207, 62, 14, 1); }
-
-*/
+/* Custom Styles */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-body, html {
-	margin: 0;
-	padding: 0;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -398,21 +377,22 @@ body {
   justify-content: center;
   align-items: center;
  }
+
  h1 {
   font-family: ibm-plex-mono, sans-serif;
-  font-weight: 700;
   text-align: center;
+  padding-bottom: .75em;
  }
 
 .calWrapper {
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
-  width: 80vw;
+  width: 85vw;
   max-width: 400px;
   height: 80%;
   border-radius: 1em;
-  padding: 2%;
+  padding: 1em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 
 }
 
@@ -424,16 +404,17 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.25em;
+  padding: 1em;
 }
 
 fieldset {
   border: none;
-  margin-bottom: .75em;
 }
 
 legend {
-  margin-bottom: .75em;
+  margin-bottom: .5em;
+  font-size: 1.35em;
+  font-weight: 900;
 }
 
 .stack {
@@ -443,8 +424,15 @@ legend {
   flex-direction: column;
 }
 
-input[text=radio] {
-  padding: 1em;
+/* label */
+label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: .5em 0;
+  cursor: pointer;
+  position: relative;
 }
 
 .btn-container {
@@ -479,13 +467,9 @@ input[type=text] {
 }
 
 input[type=text]:focus,
-select:focus,
+input[text=radio]:focus,
 button:focus {
   border: 3px solid #555;
-}
-
-select::-ms-expand {
-  display: none;
 }
 
 .container {
